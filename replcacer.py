@@ -41,7 +41,6 @@ for fileElement in listOfPathsToFiles:
             for lineFileContent in l:
                 lineFileContent = re.sub(presentLastName, futureLastName, lineFileContent)
                 newContent.append(lineFileContent)
-        #open(fileElement, 'w').close()
         with open(fileElement, 'w', encoding = "ISO-8859-1") as writeFileElement:
             for i in newContent:
                 writeFileElement.write("{}\n".format(i))
@@ -73,4 +72,4 @@ for fileElement in listOfPathsToFiles:
     NewNamelistOfPathsToFiles = re.sub(presentLastName, futureLastName, fileElement)
     os.rename(fileElement, NewNamelistOfPathsToFiles)
 
-input('Готово зябл :)')
+input('Press any key to exit')
