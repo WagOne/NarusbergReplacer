@@ -1,5 +1,6 @@
 # NarusbergReplacer
 # How to install and run:
+<li> 
 -Скачать и установить Python 3 на ваш компьютер
 -Скачать и разархивировать данный проект
 -Запустить replacer.py
