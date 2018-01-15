@@ -18,7 +18,11 @@ dataCheck(futureLastName)
 presentLastName = input("Введите первые 2 зыглавные буквы фамилии владельца: ")
 dataCheck(presentLastName)
 
-pathToProjectDir = input("Введите полный путь к папке с проектом: ")
+pathToProjectDir = input("Введите полный путь к папке в которой лежит проект(Путь должен иметь такой формат в котором не фигурируют индентификаторы): ")
+if(presentLastName in pathToProjectDir):
+   print("Noob?")
+   time.sleep(2)
+   os._exit(2)
 projectTree = os.walk(pathToProjectDir)
 listOfPathsToFiles = []  #лист для хранения путей к файлам
 listOfPathsToDirs = []   #лист для хранения путей к дерикториям
