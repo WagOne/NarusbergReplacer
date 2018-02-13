@@ -76,4 +76,4 @@ for fileElement in listOfPathsToFiles:
     NewNamelistOfPathsToFiles = re.sub(presentLastName, futureLastName, fileElement)
     os.rename(fileElement, NewNamelistOfPathsToFiles)
 
-input('Press any key to exit')
+input('Press enter key to exit')
